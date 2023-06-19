@@ -8,16 +8,25 @@ import { LoginComponent } from './pages/users/login/login.component';
 import { TiendasComponent } from './pages/tiendas/tiendas.component';
 import { CrearTiendasComponent } from './pages/tiendas/crear-tiendas/crear-tiendas.component';
 import { EditarTiendasComponent } from './pages/tiendas/editar-tiendas/editar-tiendas.component';
+import { AvionesComponent } from './lab14/aviones/aviones.component';
+import { PilotoComponent } from './lab14/piloto/piloto.component';
+import { TripulacionComponent } from './lab14/tripulacion/tripulacion.component';
+import { VuelosComponent } from './lab14/vuelos/vuelos.component';
 
 const routesInicio: Routes = [
   { path: '', component: LoginComponent },
+  {path:'listar-aviones' , component: AvionesComponent},
+  {path:'listar-pilotos' , component: PilotoComponent},
+  {path:'listar-tripulacion' , component: TripulacionComponent},
+  { path: 'listar-vuelos', component:VuelosComponent },
   { path: 'crear-usuario', component: CreateUserComponent },
   { path: 'listar-productos', component: ListarProductosComponent },
-  { path: 'crear-productos', component: CrearProductosComponent },
+
+  /* { path: 'crear-productos', component: CrearProductosComponent },
   { path: 'editar-producto/:id', component: EditarProductosComponent },
   { path: 'tiendas', component: TiendasComponent },
   { path: 'crear-tiendas', component: CrearTiendasComponent},
-  { path: 'editar-tienda/:id', component: EditarTiendasComponent},
+  { path: 'editar-tienda/:id', component: EditarTiendasComponent}, */
   { path: '**', redirectTo: '', pathMatch: 'full'}
 ];
 

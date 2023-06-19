@@ -16,6 +16,10 @@ import { TiendasComponent } from './pages/tiendas/tiendas.component';
 import { GoogleMapsModule } from '@angular/google-maps';
 import { EditarTiendasComponent } from './pages/tiendas/editar-tiendas/editar-tiendas.component';
 import { CrearTiendasComponent } from './pages/tiendas/crear-tiendas/crear-tiendas.component';
+import { AvionesComponent } from './lab14/aviones/aviones.component';
+import { PilotoComponent } from './lab14/piloto/piloto.component';
+import { TripulacionComponent } from './lab14/tripulacion/tripulacion.component';
+import { VuelosComponent } from './lab14/vuelos/vuelos.component';
 
 
 
@@ -30,7 +34,11 @@ import { CrearTiendasComponent } from './pages/tiendas/crear-tiendas/crear-tiend
     EditarProductosComponent,
     TiendasComponent,
     EditarTiendasComponent,
-    CrearTiendasComponent
+    CrearTiendasComponent,
+    AvionesComponent,
+    PilotoComponent,
+    TripulacionComponent,
+    VuelosComponent
   ],
   imports: [
     BrowserModule,
