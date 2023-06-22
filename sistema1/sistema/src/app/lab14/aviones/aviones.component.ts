@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Aviones } from 'src/app/models/aviones';
+import { AvionesService } from 'src/app/services/aviones.service';
 
 @Component({
   selector: 'app-aviones',
@@ -20,13 +22,14 @@ export class AvionesComponent implements OnInit{
   obtenerAviones(){
     this._avionesService.getAviones().subscribe(data =>{
       console.log(data);
-      this.listAviones =data;
-      this.elementos ? this.listAviones.length;
+      this.listAviones = data;
+      this.elementos = this.listAviones.length;
     })
 
   }
   
   eliminarAviones(id:any){
+
     this._avionesService.deleteAviones
 
   }
