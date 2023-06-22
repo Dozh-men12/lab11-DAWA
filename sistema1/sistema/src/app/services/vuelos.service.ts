@@ -11,7 +11,7 @@ export class VuelosService {
   // Url devuelos --> deben existir los metodos especificados
   // en este servicios para su buen funcionamiento
 
-  url = '';
+  url = 'http://localhost:4000/api/vuelo';
 
   constructor(private http: HttpClient) {}
 

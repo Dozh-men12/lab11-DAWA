@@ -10,7 +10,7 @@ export class AvionesService {
   // Url de aviones--> deben existir los metodos especificados
   // en este servicios para su buen funcionamiento
 
-  url = '';
+  url = 'http://localhost:4000/api/avion';
 
   constructor(private http: HttpClient) { 
 

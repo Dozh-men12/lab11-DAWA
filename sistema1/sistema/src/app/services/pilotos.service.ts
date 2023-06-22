@@ -11,7 +11,7 @@ export class PilotosService {
   // Url de pilotos --> deben existir los metodos especificados
   // en este servicios para su buen funcionamiento
 
-  url = '';
+  url = 'http://localhost:4000/api/piloto';
 
   constructor(private http: HttpClient) {}
 

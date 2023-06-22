@@ -14,22 +14,44 @@
         <hr>
     </div>
     <br>
-    <table class="table table-hover table-striped">
+    <table *ngIf="listVuelos.length > 0" class="table table-hover table-striped">
         <thead>
             <tr>
                 <th>
-                    Codigo
+                    Número de Vuelo
                 </th>
                 <th>
-                    Tipo
+                    Origen
+                </th>
+                <th>
+                    Destino
+                </th>
+                <th>
+                    Fecha
+                </th>
+                <th>
+                    Avión
+                </th>
+                <th>
+                    Piloto
+                </th>
+                <th>
+                    Acciones
                 </th>
             </tr>
         </thead>
         <tbody id="datos">
-            <tr>
-                <td>12</td>
-                <td>Mosquito</td>
-               
+            <tr *ngFor="let vuelo of listVuelos">
+                <td>{{ vuelo.nvuelo }}</td>
+                <td>{{ vuelo.origen }}</td>
+                <td>{{ vuelo.destino }}</td>
+                <td>{{ vuelo.fecha }}</td>
+                <td>{{ vuelo.avion }}</td>
+                <td>{{ vuelo.piloto }}</td>
+                <td>
+                    <a style="font-size: 25px; text-decoration: none;" class="pe pe-7s-trash text-accent"></a>&nbsp;&nbsp;
+                    <a style="font-size: 25px; text-decoration: none;" class="pe pe-7s-pen text-accent"></a>
+                </td>
             </tr>
            
 

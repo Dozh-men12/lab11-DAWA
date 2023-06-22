@@ -1,12 +1,12 @@
 export class Pilotos {
     _id?: string;
-    cod: string;
+    codigo: string;
     nombre: string;
-    horas_vuelo: string;
+    hvuelo: string;
 
-    constructor(cod: string, nombre: string, horas_vuelo: string){
-        this.cod = cod;
+    constructor(codigo: string, nombre: string, hvuelo: string){
+        this.codigo = codigo;
         this.nombre = nombre;
-        this.horas_vuelo = horas_vuelo;       
+        this.hvuelo = hvuelo;       
     }
 }

@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Tripulacion } from 'src/app/models/tripulacion';
-import { PilotosService } from 'src/app/services/pilotos.service';
 import { TripulacionService } from 'src/app/services/tripulacion.service';
 
 @Component({
